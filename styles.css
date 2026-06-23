@@ -637,6 +637,80 @@ button {
   margin-top: 18px;
 }
 
+.article-teaser {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(145deg, rgba(219, 225, 199, 0.36), rgba(255, 250, 243, 0.94) 44%),
+    rgba(255, 250, 243, 0.88);
+  box-shadow: 0 18px 40px rgba(74, 53, 30, 0.08);
+}
+
+.article-teaser-copy {
+  margin-bottom: 0;
+}
+
+.seo-article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.96), rgba(255, 248, 238, 0.94));
+  box-shadow: var(--shadow);
+  padding: 36px;
+}
+
+.seo-article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 28px;
+}
+
+.seo-article-body {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.seo-article-body p {
+  margin: 0 0 18px;
+}
+
+.seo-article-body h2 {
+  margin: 28px 0 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  line-height: 1.05;
+  color: var(--text);
+}
+
+.seo-article-side {
+  position: relative;
+}
+
+.article-card {
+  position: sticky;
+  top: 110px;
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: rgba(255, 250, 243, 0.9);
+  box-shadow: 0 16px 30px rgba(74, 53, 30, 0.07);
+}
+
+.article-card h3 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  line-height: 1.05;
+  color: var(--text);
+}
+
 .contact-card {
   padding: 42px;
 }
@@ -709,7 +783,8 @@ button {
   .reviews-grid,
   .catalog-grid,
   .box-grid,
-  .social-grid {
+  .social-grid,
+  .seo-article-layout {
     grid-template-columns: 1fr;
   }
 
@@ -833,6 +908,20 @@ button {
     padding: 22px;
   }
 
+  .article-teaser,
+  .seo-article {
+    padding: 22px;
+  }
+
+  .article-teaser {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .article-card {
+    position: static;
+  }
+
   .page-hero-copy h1 {
     font-size: clamp(2rem, 9vw, 3rem);
   }
@@ -905,7 +994,8 @@ button {
   .contact-link,
   .catalog-card,
   .box-card,
-  .social-card {
+  .social-card,
+  .article-card {
     padding: 18px;
   }
 
@@ -919,6 +1009,9 @@ button {
   .catalog-card,
   .box-card,
   .social-card,
+  .article-card,
+  .article-teaser,
+  .seo-article,
   .page-hero {
     border-radius: 22px;
   }
