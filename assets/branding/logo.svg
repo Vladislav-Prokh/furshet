@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Furshet SV</title>
+  <desc id="logoDesc">Furshet SV wordmark with a bold SV monogram for catering branding.</desc>
+  <defs>
+    <linearGradient id="monogramGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9ba79"/>
+      <stop offset="100%" stop-color="#b88f48"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 8)">
+    <rect x="0" y="0" width="104" height="104" rx="28" fill="#fcf8f1"/>
+    <rect x="3" y="3" width="98" height="98" rx="25" fill="none" stroke="#dcc7a0" stroke-width="1.5"/>
+    <path d="M69 29H41c-8.6 0-14 4.9-14 12.1 0 7.4 5.2 10.4 17.3 13l13.8 3c8.7 1.9 11.9 4 11.9 8.8 0 5.5-4.7 9.1-12.9 9.1H29" fill="none" stroke="#516234" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M43 29l18.8 46L80 29" fill="none" stroke="url(#monogramGold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 83h56" fill="none" stroke="#c3a163" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(132 20)">
+    <text x="0" y="44" fill="#2f261e" font-size="41" font-weight="700" font-family="'Cormorant Garamond', Georgia, serif" letter-spacing="1">Furshet SV</text>
+    <text x="2" y="69" fill="#6d7a46" font-size="12" font-weight="800" font-family="'Manrope', 'Avenir Next', Arial, sans-serif" letter-spacing="4.1">BUFFET CATERING</text>
+    <path d="M0 85h148" stroke="#c3a163" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+</svg>

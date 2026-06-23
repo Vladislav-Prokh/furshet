@@ -85,6 +85,18 @@ button {
   gap: 4px;
 }
 
+.brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(176px, 19vw, 228px);
+  height: auto;
+}
+
 .brand-kicker,
 .eyebrow,
 .trust-number {
@@ -93,13 +105,6 @@ button {
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--accent);
-}
-
-.brand-name {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 0.9;
 }
 
 .site-nav,
@@ -687,8 +692,8 @@ button {
 }
 
 @media (max-width: 540px) {
-  .brand-name {
-    font-size: 1.8rem;
+  .brand-logo {
+    width: min(100%, 198px);
   }
 
   .site-nav {

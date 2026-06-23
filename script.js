@@ -96,29 +96,31 @@ const translations = {
 };
 
 const galleryImages = [
-  "3904974503298310713_3904974265567787845.jpg",
-  "3904974503298310713_3904974269216750227.jpg",
-  "3904974503298310713_3904974276187881781.jpg",
-  "3904974503298310713_3904974281237834227.jpg",
-  "3904990141780211541.jpg",
-  "3904994850062709300.jpg",
-  "3905002562129256781.jpg",
-  "3905003055673174898.jpg",
-  "3905009334546204160.jpg",
-  "3905013104102558988.jpg",
-  "3905028728706833751.jpg",
-  "3905033848978971277.jpg",
-  "3905034972557592392.jpg",
-  "3905041339066541969.jpg",
-  "3907687800932463516.webp",
-  "3909180715601191675.webp",
-  "3909185024021046081_3909184866930305275.webp",
-  "3909185024021046081_3909184905954087104.webp",
-  "3912151559117887537.jpg",
-  "3912152564668743085.jpg",
-  "3919460134634841768.jpg",
-  "3919460517440639866.jpg"
+  "assets/images/gallery/gallery-01.avif",
+  "assets/images/gallery/gallery-02.avif",
+  "assets/images/gallery/gallery-03.avif",
+  "assets/images/gallery/gallery-04.avif",
+  "assets/images/gallery/gallery-05.avif",
+  "assets/images/gallery/gallery-06.avif",
+  "assets/images/gallery/gallery-07.avif",
+  "assets/images/gallery/gallery-08.avif",
+  "assets/images/gallery/gallery-09.avif",
+  "assets/images/gallery/gallery-10.avif",
+  "assets/images/gallery/gallery-11.avif",
+  "assets/images/gallery/gallery-12.avif",
+  "assets/images/gallery/gallery-13.avif",
+  "assets/images/gallery/gallery-14.avif",
+  "assets/images/gallery/gallery-15.avif",
+  "assets/images/gallery/gallery-16.avif",
+  "assets/images/gallery/gallery-17.avif",
+  "assets/images/gallery/gallery-18.avif",
+  "assets/images/gallery/gallery-19.avif",
+  "assets/images/gallery/gallery-20.avif",
+  "assets/images/gallery/gallery-21.avif",
+  "assets/images/gallery/gallery-22.avif"
 ];
+
+const shareImage = "https://furshets.com/assets/images/gallery/gallery-13.avif";
 
 const galleryGrid = document.querySelector("#gallery-grid");
 const reviewsGrid = document.querySelector("#reviews-grid");
@@ -274,7 +276,7 @@ function applyLanguage(lang) {
         "@type": "FoodEstablishment",
         name: "Furshet SV",
         url: "https://furshets.com/",
-        image: "https://furshets.com/3905034972557592392.jpg",
+        image: shareImage,
         description: seo.schemaDescription,
         telephone: "+380684999394",
         sameAs: ["https://www.instagram.com/furshet.sv/"],
