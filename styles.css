@@ -808,14 +808,19 @@ button {
   .site-header {
     position: static;
     align-items: stretch;
-    gap: 16px;
-    padding: 16px;
+    gap: 14px;
+    padding: 14px;
     border-radius: 26px;
   }
 
   .header-actions,
   .contact-cta-row {
     align-items: stretch;
+  }
+
+  .brand-lockup {
+    align-items: center;
+    text-align: center;
   }
 
   .button {
@@ -834,17 +839,40 @@ button {
 
   .lang-switcher {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .site-nav {
-    justify-content: space-between;
-    gap: 12px;
+    width: calc(100% + 8px);
+    margin-inline: -4px;
+    padding: 4px;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(109, 122, 70, 0.16);
+    background: rgba(255, 252, 247, 0.86);
+    white-space: nowrap;
   }
 
   .hero,
   .about,
-  .contact-card {
+  .contact-card,
+  .page-hero {
     padding: 22px;
   }
 
@@ -927,7 +955,16 @@ button {
   }
 
   .page-hero-media {
-    min-height: 320px;
+    min-height: 280px;
+  }
+
+  .seo-article-body {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .seo-article-body h2 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
   }
 
   .hero-point {
@@ -942,17 +979,23 @@ button {
 }
 
 @media (max-width: 540px) {
+  .page-shell {
+    width: min(calc(100% - 14px), var(--max-width));
+    margin-bottom: 32px;
+  }
+
   .brand-logo {
-    width: min(100%, 198px);
+    width: min(100%, 182px);
   }
 
   .site-nav {
-    justify-content: center;
-    gap: 16px;
+    gap: 8px;
   }
 
   .site-nav a {
-    font-size: 0.88rem;
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 0.84rem;
   }
 
   .hero-subcopy,
@@ -976,6 +1019,13 @@ button {
     line-height: 1;
   }
 
+  .page-hero-copy h1,
+  .about-content h2,
+  .section-heading h2 {
+    font-size: clamp(1.85rem, 8.2vw, 2.45rem);
+    line-height: 1.02;
+  }
+
   .hero-actions {
     margin-top: 20px;
   }
@@ -987,6 +1037,37 @@ button {
 
   .section-heading {
     margin-bottom: 20px;
+  }
+
+  .hero-points {
+    gap: 8px;
+  }
+
+  .hero-point {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 0.86rem;
+  }
+
+  .hero-note,
+  .article-teaser,
+  .seo-article {
+    padding: 18px;
+  }
+
+  .page-hero-media,
+  .about-portrait {
+    min-height: 240px;
+  }
+
+  .seo-article-body {
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+
+  .seo-article-body h2 {
+    margin-top: 24px;
+    font-size: clamp(1.55rem, 6.8vw, 2rem);
   }
 
   .trust-item,
