@@ -126,6 +126,10 @@ button {
   transition: color 180ms ease;
 }
 
+.site-nav a.is-current {
+  color: var(--text);
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible {
   color: var(--text);
@@ -291,6 +295,10 @@ button {
   min-width: 0;
 }
 
+.hero-media-single {
+  min-height: 540px;
+}
+
 .hero-card {
   overflow: hidden;
   border-radius: 28px;
@@ -309,6 +317,10 @@ button {
   inset: 48px 0 0 84px;
 }
 
+.hero-card-main-single {
+  inset: 0 26px 88px 26px;
+}
+
 .hero-card-top {
   position: absolute;
   top: 0;
@@ -323,6 +335,24 @@ button {
   bottom: 18px;
   width: 260px;
   aspect-ratio: 0.88;
+}
+
+.hero-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(280px, 82%);
+  padding: 22px;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 243, 0.92);
+  box-shadow: 0 18px 38px rgba(74, 53, 30, 0.1);
+}
+
+.hero-note p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .trust-strip {
@@ -456,6 +486,10 @@ button {
   color: var(--text);
 }
 
+.section-button {
+  margin-top: 18px;
+}
+
 .menu-list {
   display: grid;
   gap: 16px;
@@ -499,6 +533,108 @@ button {
 .gallery-card img {
   width: 100%;
   height: auto;
+}
+
+.gallery-preview-grid {
+  column-count: 3;
+}
+
+.section-cta {
+  margin-top: 18px;
+}
+
+.page-stack {
+  display: grid;
+  gap: 28px;
+}
+
+.page-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.96), rgba(255, 248, 238, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.page-hero-copy h1,
+.catalog-card h3,
+.box-card h3,
+.social-card h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text);
+}
+
+.page-hero-copy h1 {
+  margin-top: 14px;
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  line-height: 0.98;
+}
+
+.page-hero-media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 420px;
+  border: 1px solid rgba(82, 58, 31, 0.08);
+  box-shadow: 0 24px 60px rgba(75, 52, 28, 0.14);
+}
+
+.page-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog-grid,
+.box-grid,
+.social-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.catalog-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.box-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.social-grid {
+  grid-template-columns: 1.3fr 1fr 1fr;
+}
+
+.catalog-card,
+.box-card,
+.social-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: rgba(255, 250, 243, 0.82);
+  box-shadow: 0 16px 30px rgba(74, 53, 30, 0.07);
+}
+
+.catalog-card p,
+.box-card p,
+.social-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.social-card-featured {
+  background:
+    linear-gradient(150deg, rgba(219, 225, 199, 0.5), rgba(255, 250, 243, 0.94) 44%),
+    rgba(255, 250, 243, 0.9);
+}
+
+.social-card .button {
+  margin-top: 18px;
 }
 
 .contact-card {
@@ -554,7 +690,8 @@ button {
   }
 
   .hero,
-  .about {
+  .about,
+  .page-hero {
     grid-template-columns: 1fr;
   }
 
@@ -569,7 +706,10 @@ button {
   .menu-grid,
   .trust-strip,
   .contact-actions,
-  .reviews-grid {
+  .reviews-grid,
+  .catalog-grid,
+  .box-grid,
+  .social-grid {
     grid-template-columns: 1fr;
   }
 
@@ -659,7 +799,8 @@ button {
 
   .hero-card-main,
   .hero-card-top,
-  .hero-card-bottom {
+  .hero-card-bottom,
+  .hero-card-main-single {
     position: relative;
     inset: auto;
     width: 100%;
@@ -675,9 +816,29 @@ button {
     aspect-ratio: 1.05;
   }
 
+  .hero-note {
+    position: relative;
+    width: 100%;
+  }
+
   .about-portrait {
     min-height: auto;
     max-height: 640px;
+  }
+
+  .page-hero,
+  .hero,
+  .about,
+  .contact-card {
+    padding: 22px;
+  }
+
+  .page-hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .page-hero-media {
+    min-height: 320px;
   }
 
   .hero-point {
@@ -741,7 +902,10 @@ button {
 
   .trust-item,
   .menu-panel,
-  .contact-link {
+  .contact-link,
+  .catalog-card,
+  .box-card,
+  .social-card {
     padding: 18px;
   }
 
@@ -751,7 +915,11 @@ button {
   .trust-item,
   .menu-panel,
   .contact-link,
-  .gallery-card {
+  .gallery-card,
+  .catalog-card,
+  .box-card,
+  .social-card,
+  .page-hero {
     border-radius: 22px;
   }
 }

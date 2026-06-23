@@ -70,20 +70,21 @@
     }
   </script>
 </head>
-<body>
+<body data-page="home">
   <div class="page-shell">
     <header class="site-header" id="top">
       <div class="brand-lockup">
-        <a class="brand-logo-link" href="#top" aria-label="Furshet SV">
+        <a class="brand-logo-link" href="./index.html" aria-label="Furshet SV">
           <img class="brand-logo" src="./assets/branding/logo.svg" alt="Furshet SV">
         </a>
         <span class="brand-kicker">furshets.com</span>
       </div>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="#about" data-i18n="nav.about">О нас</a>
-        <a href="#menu" data-i18n="nav.menu">Меню</a>
-        <a href="#gallery" data-i18n="nav.gallery">Работы</a>
+        <a class="is-current" href="./index.html" data-i18n="nav.home">Главная</a>
+        <a href="./menu.html" data-i18n="nav.menu">Меню</a>
+        <a href="./works.html" data-i18n="nav.gallery">Работы</a>
+        <a href="./social.html" data-i18n="nav.social">Соцсети</a>
         <a href="#contact" data-i18n="nav.contact">Контакты</a>
       </nav>
 
@@ -102,7 +103,7 @@
           <span class="eyebrow" data-i18n="hero.eyebrow">Фуршетный мастер в Запорожье</span>
           <h1 data-i18n="hero.title">Собираю столы, которые сразу готовы к празднику</h1>
           <p class="hero-subcopy" data-i18n="hero.subcopy">
-            Фуршеты, закуски и мини-наборы для дней рождения, домашних встреч и праздников.
+            Чтобы вы просто встречали гостей, отдыхали и не стояли весь день у плиты.
           </p>
 
           <div class="hero-points">
@@ -112,28 +113,26 @@
           </div>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="https://www.instagram.com/furshet.sv/" target="_blank" rel="noreferrer" data-i18n="hero.instagram">
-              Перейти в Instagram
+            <a class="button button-primary" href="./menu.html" data-i18n="hero.menu">
+              Смотреть меню
             </a>
-            <a class="button button-secondary" href="#gallery" data-i18n="hero.works">
+            <a class="button button-secondary" href="./works.html" data-i18n="hero.works">
               Смотреть работы
             </a>
-            <a class="button button-secondary" href="#contact" data-i18n="hero.call">
-              Позвонить
+            <a class="button button-secondary" href="./social.html" data-i18n="hero.social">
+              Соцсети
             </a>
           </div>
         </div>
 
-        <div class="hero-media">
-          <figure class="hero-card hero-card-main">
+        <div class="hero-media hero-media-single">
+          <figure class="hero-card hero-card-main hero-card-main-single">
             <img src="./assets/images/gallery/gallery-13.avif" alt="Ассорти закусок и канапе">
           </figure>
-          <figure class="hero-card hero-card-top">
-            <img src="./assets/images/gallery/gallery-20.avif" alt="Фуршетный набор с мини-тако и десертами">
-          </figure>
-          <figure class="hero-card hero-card-bottom">
-            <img src="./assets/images/gallery/gallery-21.avif" alt="Порционные салаты и закуски">
-          </figure>
+          <div class="hero-note">
+            <span class="eyebrow" data-i18n="hero.noteEyebrow">Формат под ваш праздник</span>
+            <p data-i18n="hero.noteText">Мини-боксы, праздничные столы, детские наборы и фуршетные закуски с аккуратной подачей.</p>
+          </div>
         </div>
       </section>
 
@@ -184,17 +183,18 @@
       <section class="menu section" id="menu">
         <div class="section-heading">
           <span class="eyebrow" data-i18n="menu.eyebrow">Что можно заказать</span>
-          <h2 data-i18n="menu.title">В меню всё, что удобно есть, красиво подать и сразу поставить на стол</h2>
+          <h2 data-i18n="menu.title">Меню собрано так, чтобы гостям было удобно есть, а вам удобно встречать праздник</h2>
           <p data-i18n="menu.lead">
-            Напишите мне в direct или позвоните, и вместе соберём меню под ваш праздник.
+            Больше позиций, боксов и примеров подачи теперь на отдельной странице меню.
           </p>
         </div>
 
         <div class="menu-grid">
           <article class="menu-panel menu-panel-featured">
             <p class="menu-featured-copy" data-i18n="menu.featured">
-              Делаю так, чтобы в день праздника вам не пришлось стоять у плиты. Всё будет готово, красиво собрано и удобно для гостей.
+              Собираю столы, которые сразу готовы к празднику: от тарталеток и канапе до боксов с мини-бургерами, салатами и рулетами.
             </p>
+            <a class="button button-secondary section-button" href="./menu.html" data-i18n="menu.cta">Открыть полное меню</a>
           </article>
 
           <article class="menu-panel">
@@ -220,13 +220,16 @@
       <section class="gallery section" id="gallery">
         <div class="section-heading">
           <span class="eyebrow" data-i18n="gallery.eyebrow">Работы</span>
-          <h2 data-i18n="gallery.title">Фуршеты, которые хочется сразу поставить на стол</h2>
+          <h2 data-i18n="gallery.title">На главной только короткое превью, остальную галерею вынесли отдельно</h2>
           <p data-i18n="gallery.lead">
-            Здесь можно посмотреть, как выглядят мои наборы, закуски и праздничные столы вживую.
+            Так страница стала чище и быстрее, а все фото можно спокойно посмотреть на отдельной странице работ.
           </p>
         </div>
 
-        <div class="gallery-grid" id="gallery-grid"></div>
+        <div class="gallery-grid gallery-preview-grid" id="gallery-grid" data-gallery-limit="3"></div>
+        <div class="section-cta">
+          <a class="button button-primary" href="./works.html" data-i18n="gallery.cta">Посмотреть остальные работы</a>
+        </div>
       </section>
 
       <section class="contact section" id="contact">
@@ -244,9 +247,9 @@
               <span data-i18n="contact.phoneLabel">Телефон</span>
               <strong>068 499 9394</strong>
             </a>
-            <a class="contact-link" href="https://www.instagram.com/furshet.sv/" target="_blank" rel="noreferrer">
-              <span>Instagram</span>
-              <strong>@furshet.sv</strong>
+            <a class="contact-link" href="./social.html">
+              <span data-i18n="contact.socialLabel">Соцсети</span>
+              <strong data-i18n="contact.socialValue">Instagram и прямой контакт</strong>
             </a>
           </div>
 
